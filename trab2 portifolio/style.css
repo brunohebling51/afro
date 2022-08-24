@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2? family= Poppins:wght@100;200;300 & display=swap');
+
+:root {
+    --background: #000000;
+    --primary: #4f3caf;
+    --secondary: #0c2026;
+    --text: #5f5f5f;
+    --border: #bbb;
+    --link: #333;
+    --hover: rgb(225, 216, 216);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, main {
+    font-family: 'Poppins';
+    background-color: var(--background);
+    color: var(--hover);
+}
+
+/* header */
+
+header {
+    padding: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header .logo {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: var(--hover);
+}
+
+header .logo span {
+    color: var(--primary);
+}
+
+/* corpo do site */
+
+.container h1 {
+    font-size: 5rem;
+    text-align: start;
+    padding: 80px 0 0 35px;
+}
+
+h2 {
+    font-size: 2rem;
+    padding: 80px 0 0 35px;
+}
+
+h2 span {
+    color: var(--primary);
+}
+
+/* techs */
+
+.lista-techs {
+    display: flex;
+    padding: 80px 35px 0 35px;
+    gap: 35px;
+}
+
+.lista-techs img {
+    position: absolute;
+    height: 4.5rem;
+    width: 4rem;
+    object-fit: contain;
+    top: -1.5rem;
+    right: -1.5rem;
+}
+
+.tech1, .tech2, .tech3, .tech4 {
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 20px;
+    position: relative;
+    transition: all 0.4s;
+}
+
+.tech1:hover, .tech2:hover, .tech3:hover, .tech4:hover {
+    background-color: var(--primary);
+    cursor: pointer;
+    transform: translateY(-1.5rem);
+}
+
+a {
+    text-decoration: none;
+}
+
+h3 {
+    color: var(--primary);
+    text-align: start;
+    padding: 0 0 15px 0;
+}
+
+/* response */
+
+
+@media (max-width: 768px) {
+    .container h1 {
+        font-size: 3rem;
+    }
+    
+    .lista-techs {
+        display: grid;
+        align-items: center;
+        line-height: 20px;
+    }
+}
