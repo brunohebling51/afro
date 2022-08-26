@@ -16,7 +16,19 @@
     box-sizing: border-box;
 }
 
-body, main {
+/* limite do site */
+
+
+main,
+header {
+    max-width: 1460px;
+    margin: auto;
+}
+
+/* fim limite */
+
+body,
+main {
     font-family: 'Poppins';
     background-color: var(--background);
     color: var(--hover);
@@ -44,18 +56,19 @@ header .logo span {
 
 /* corpo do site */
 
+
 .container h1 {
     font-size: 5rem;
     text-align: start;
     padding: 80px 0 0 35px;
 }
 
-h2 {
+.techs-text {
     font-size: 2rem;
     padding: 80px 0 0 35px;
 }
 
-h2 span {
+.techs-text span {
     color: var(--primary);
 }
 
@@ -65,6 +78,9 @@ h2 span {
     display: flex;
     padding: 80px 35px 0 35px;
     gap: 35px;
+    border-top: 1px solid var(--border);
+    margin-top: 35px;
+    margin-bottom: 35px;
 }
 
 .lista-techs img {
@@ -76,7 +92,10 @@ h2 span {
     right: -1.5rem;
 }
 
-.tech1, .tech2, .tech3, .tech4 {
+.tech1,
+.tech2,
+.tech3,
+.tech4 {
     border: 1px solid white;
     border-radius: 8px;
     padding: 20px;
@@ -84,7 +103,10 @@ h2 span {
     transition: all 0.4s;
 }
 
-.tech1:hover, .tech2:hover, .tech3:hover, .tech4:hover {
+.tech1:hover,
+.tech2:hover,
+.tech3:hover,
+.tech4:hover {
     background-color: var(--primary);
     cursor: pointer;
     transform: translateY(-1.5rem);
@@ -94,11 +116,58 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    color: white;
+    transition: all 0.4s;
+}
+
 h3 {
     color: var(--primary);
     text-align: start;
     padding: 0 0 15px 0;
 }
+
+/* contacts */
+
+.contact .text-contact {
+    padding: 0 0 0 35px;
+    font-size: 2rem;
+    margin-top: 6.25rem;
+}
+
+.contacts {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* margin-top: 3rem;
+    margin-top: 6.25rem; */
+    padding: 3.125rem;
+}
+
+.contacts a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+    color: white;
+    text-decoration: none;
+}
+
+.contacts a:hover {
+    text-transform: all 0.7s ease-in-out;
+    color: red;
+}
+
+/* footer */
+
+footer {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid white;
+}
+
+/* icons */
+
 
 /* response */
 
@@ -107,10 +176,18 @@ h3 {
     .container h1 {
         font-size: 3rem;
     }
-    
+
     .lista-techs {
         display: grid;
         align-items: center;
         line-height: 20px;
     }
+
+    .contacts {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 3rem;
+        gap: 1.5rem;
+    }
+
 }
