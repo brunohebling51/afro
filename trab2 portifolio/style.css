@@ -1,197 +1,201 @@
 @import url('https://fonts.googleapis.com/css2? family= Poppins:wght@100;200;300 & display=swap');
 
 :root {
-    --background: #000000;
-    --primary: #4f3caf;
-    --secondary: #0c2026;
-    --text: #5f5f5f;
-    --border: #bbb;
-    --link: #333;
-    --hover: rgb(225, 216, 216);
+  --background: #000000;
+  --primary: #4f3caf;
+  --secondary: #0c2026;
+  --text: #5f5f5f;
+  --border: #bbb;
+  --link: #333;
+  --hover: rgb(225, 216, 216);
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* limite do site */
 
 main,
 header {
-    max-width: 1460px;
-    margin: auto;
+  max-width: 1460px;
+  margin: auto;
 }
 
 /* fim limite */
 
 body,
 main {
-    font-family: 'Poppins';
-    background-color: var(--background);
-    color: var(--hover);
+  font-family: 'Poppins';
+  background-color: var(--background);
+  color: var(--hover);
 }
 
 /* header */
 
 .download-cv {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border: 1px solid white;
-    width: 125px;
-    height: 35px;
-    color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 125px;
+  height: 35px;
+  color: white;
+}
+
+.download-cv:hover {
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+  color: red;
+  border: none;
 }
 
 header {
-    padding: 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header .logo {
-    font-family: 'Source Code Pro', monospace;
-    font-weight: 600;
-    font-size: 1.5rem;
-    color: var(--hover);
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: var(--hover);
 }
 
 header .logo span {
-    color: var(--primary);
+  color: var(--primary);
 }
 
 hr {
-    margin-top: 2rem;
-    border: 0;
-    height: 2px;
-    background-image: linear-gradient(to right, transparent, #CCC, transparent);
+  margin-top: 2rem;
+  border: 0;
+  height: 2px;
+  background-image: linear-gradient(to right, transparent, #CCC, transparent);
 }
 
 /* corpo do site */
 
 .container h1 {
-    font-size: 5rem;
-    text-align: start;
-    padding: 80px 0 0 35px;
+  font-size: 5rem;
+  text-align: start;
+  padding: 80px 0 0 35px;
 }
 
 .techs-text {
-    font-size: 2rem;
-    padding: 80px 0 0 35px;
+  font-size: 2rem;
+  padding: 80px 0 0 35px;
 }
 
 .techs-text span {
-    color: var(--primary);
+  color: var(--primary);
 }
 
 /* techs */
 
 .lista-techs {
-    display: flex;
-    padding: 80px 35px 0 35px;
-    gap: 35px;
-    margin-top: 35px;
-    margin-bottom: 35px;
+  display: flex;
+  padding: 80px 35px 0 35px;
+  gap: 35px;
+  margin-top: 35px;
+  margin-bottom: 35px;
 }
 
 .lista-techs img {
-    position: absolute;
-    height: 4.5rem;
-    width: 4rem;
-    object-fit: contain;
-    top: -1.5rem;
-    right: -1.5rem;
+  position: absolute;
+  height: 4.5rem;
+  width: 4rem;
+  object-fit: contain;
+  top: -1.5rem;
+  right: -1.5rem;
 }
 
 .tech1,
 .tech2,
 .tech3,
 .tech4 {
-    border: 1px solid white;
-    border-radius: 8px;
-    padding: 20px;
-    position: relative;
-    transition: all 0.4s;
+  border: 1px solid rgb(74, 73, 73);
+  border-radius: 8px;
+  padding: 20px;
+  position: relative;
+  transition: all 0.4s;
 }
 
 .tech1:hover,
 .tech2:hover,
 .tech3:hover,
 .tech4:hover {
-    /* background-color: var(--primary); */
-    border: none;
-    cursor: pointer;
-    transform: translateY(-1.5rem);
+  /* background-color: var(--primary); */
+  border: none;
+  cursor: pointer;
+  transform: translateY(-1.5rem);
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 a:hover {
-    color: white;
-    transition: all 0.4s;
+  color: white;
+  transition: all 0.4s;
 }
 
 h3 {
-    color: var(--primary);
-    text-align: start;
-    padding: 0 0 15px 0;
+  color: var(--primary);
+  text-align: start;
+  padding: 0 0 15px 0;
 }
 
 /* contacts */
 
 .contact .text-contact {
-    padding: 0 0 0 35px;
-    font-size: 2rem;
-    margin-top: 6.25rem;
-    margin-bottom: 3rem;
+  padding: 0 0 0 35px;
+  font-size: 2rem;
+  margin-top: 6.25rem;
+  margin-bottom: 3rem;
 }
 
 .contacts {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    /* margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* margin-top: 3rem;
     margin-top: 6.25rem; */
-    padding: 3.125rem;
-    gap: 2rem;
+  padding: 3.125rem;
+  gap: 2rem;
 }
 
 .contacts a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 2rem;
-    color: black;
-    text-decoration: none;
-    border-radius: 52px;
-    background: linear-gradient(45deg, #cacaca, #f0f0f0);
-    box-shadow: 30px -30px 15px #8b8b8b,
-        -30px 30px 15px #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2rem;
+  color: white;
+  text-decoration: none;
+  border-radius: 52px;
+  border: 1px solid white;
 }
 
 .contacts a:hover {
-    text-transform: all 0.7s ease-in-out;
-    color: red;
+  text-transform: all 0.7s ease-in-out;
+  color: red;
 }
 
 /* footer */
 
 footer {
-    padding: 1.5rem;
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 2, 5rem;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2, 5rem;
 }
 
 .icons-footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: .9375rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .9375rem;
 }
 
 /* icons */
@@ -201,21 +205,54 @@ footer {
 
 
 @media (max-width: 768px) {
-    .container h1 {
-        font-size: 3rem;
-    }
+  header .logo {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: var(--hover);
+  }
 
-    .lista-techs {
-        display: grid;
-        align-items: center;
-        line-height: 20px;
-    }
+  .download-cv {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100px;
+    height: 35px;
+    color: white;
+    padding: 1rem;
+    gap: 5px;
+    border: 1px solid white;
+    border-radius: 47px;
+  }
 
-    .contacts {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        margin-top: 3rem;
-        gap: 1.5rem;
-    }
+  header .logo span {
+    color: var(--primary);
+  }
+
+  .container h1 {
+    font-size: 3rem;
+  }
+
+  .lista-techs {
+    display: grid;
+    align-items: center;
+    line-height: 20px;
+  }
+
+  .contacts {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 3rem;
+    gap: 1.5rem;
+  }
+
+  .contacts a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+    color: white;
+    text-decoration: none;
+  }
 
 }
